@@ -8,15 +8,24 @@ import {
 } from 'react-native';
 
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import Home from './components/Home';
 import About from './components/About';
 import Experience from './components/Experience';
 
 function App(){
   const Drawer = createDrawerNavigator();
+
+  const MyTheme = {
+    ...DefaultTheme,
+    colors: {
+      ...DefaultTheme.colors,
+      background: '#E3A342'
+    },
+  };
+
   return (
-    <NavigationContainer style={styles.bg}>
+    <NavigationContainer theme={MyTheme}>
     <StatusBar backgroundColor='#0B486B' />
     <Drawer.Navigator
       screenOptions={{

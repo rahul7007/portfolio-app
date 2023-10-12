@@ -7,7 +7,7 @@ const Home = () => {
         <ScrollView showsVerticalScrollIndicator={false}>
             <View style={styles.container}>
             <View style={styles.upperBox}>
-                <Text style={styles.portfolioText}>Portfolio</Text>
+                <Text style={[styles.portfolioText, styles.introText]}>Portfolio</Text>
                 <View style={styles.imageContainer}>
                     <View></View>
                     <View style={styles.imageBackgroundParentCircle}>
@@ -25,15 +25,6 @@ const Home = () => {
                     <Text style={[styles.introText, {fontSize: 20}]}>Software Engineer at LTIMindtree</Text>
                 </View>
             </View>
-                <View style={{borderWidth:0, marginTop: 10, padding: 5}}>
-                    <Text style={[styles.introText, {textAlign:'right', fontSize:30, fontFamily:'Fuzzy Bubbles'}]}>About ME</Text>
-                    <Text style={[styles.introText, {fontSize: 15, textAlign:'justify', marginTop: 5}]}>
-                        &emsp;Developing and managing web applications using Agile development. Expertise in building large scale Applications using ReactJs and NodeJs. Want to work in an innovative and challenging environment equipped with the state-of-art technology that enhances my skills and knowledge my desire and drive to succeed will be an asset, which I will contribute to the organisation’s growth and profitability.
-                    </Text>
-                    <Text style={[styles.introText, {fontSize: 15, textAlign:'justify', marginTop: 5}]}>
-                        &emsp;Work experience with C, C++, Java, NodeJs, ReactJs, ExpressJs, Javascript, Data Structures and Algorithms, Mysql, Postgress, MongoDb, GitHub, Gitlab.
-                    </Text>
-                </View>
 
                 <View style={{flex: 1, flexDirection: 'row', justifyContent:"flex-end", marginTop: 10}}>
                 <View style={{height: 50, width:50, backgroundColor:'', marginRight:20}}>
@@ -86,7 +77,6 @@ const styles = StyleSheet.create({
         fontSize: 20,
         marginLeft: 55,
         marginTop:10,
-        fontFamily: 'Roboto'
     },
     imageContainer:{
         borderWidth:0,
@@ -124,10 +114,10 @@ const styles = StyleSheet.create({
         marginTop: -50
     },
     introText:{
-        fontSize: 25, 
-        fontWeight: '900',
-        fontFamily: 'Fuzzy Bubbles',
-        color: '#2D220E'
+        color: '#2D220E',
+        fontSize: 28,
+        marginTop: 5,
+        fontFamily:'FuzzyBubbles-Bold'
     },
     contactIcon:{
         height:50,

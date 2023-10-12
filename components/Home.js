@@ -1,6 +1,7 @@
 import React from 'react';
 import { Dimensions, Image, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native'
 import { FONTS, icons, images } from '../constants'
+import RecentProjects from './RecentProjects';
 
 const Home = () => {
     return(
@@ -26,7 +27,7 @@ const Home = () => {
                 </View>
             </View>
 
-                <View style={{flex: 1, flexDirection: 'row', justifyContent:"flex-end", marginTop: 10}}>
+                <View style={{flex: 1, flexDirection: 'row', justifyContent:"space-between", marginTop: 28, paddingHorizontal: 50}}>
                 <View style={{height: 50, width:50, backgroundColor:'', marginRight:20}}>
                 <Image 
                     source={icons.whatsapp}
@@ -46,6 +47,9 @@ const Home = () => {
                     />  
                 </View>
             </View> 
+            <View style={styles.recentProjectContainer}>
+                <RecentProjects />
+            </View>
             </View>
         </ScrollView>
     )
@@ -122,6 +126,9 @@ const styles = StyleSheet.create({
     contactIcon:{
         height:50,
         width: 50
+    },
+    recentProjectContainer:{
+        marginTop: 20
     }
 });
 

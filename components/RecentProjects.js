@@ -20,7 +20,7 @@ const RecentProjects = () => {
         <FlatList
             data={sampleData}
             horizontal
-            style={{margin: 10}}
+            style={{marginTop: 10}}
             bounces={false}
             onScroll={onScroll}
             scrollEventThrottle={5}

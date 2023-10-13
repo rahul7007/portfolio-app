@@ -2,6 +2,7 @@ import React from 'react';
 import { Dimensions, Image, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native'
 import { FONTS, icons, images } from '../constants'
 import RecentProjects from './RecentProjects';
+import Skills from './Skills';
 
 const Home = () => {
     return(
@@ -46,8 +47,13 @@ const Home = () => {
                         style={styles.contactIcon}
                     />  
                 </View>
+            </View>
+            <View style={styles.skillsContainer}>
+                <Text style={[styles.introText, {textTransform:'uppercase'}]}>Skills</Text>
+                <Skills />
             </View> 
             <View style={styles.recentProjectContainer}>
+                <Text style={[styles.introText, {textTransform:'uppercase'}]}>Recent Projects</Text>
                 <RecentProjects />
             </View>
             </View>
@@ -128,7 +134,12 @@ const styles = StyleSheet.create({
         width: 50
     },
     recentProjectContainer:{
-        marginTop: 20
+        marginTop: 20,
+        paddingLeft: 10
+    },
+    skillsContainer:{
+        marginTop: 20,
+        padding: 10
     }
 });
 

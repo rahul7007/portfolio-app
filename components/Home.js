@@ -1,6 +1,7 @@
 import React from 'react';
 import { Dimensions, Image, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native'
 import { FONTS, icons, images } from '../constants'
+import Certificate from './Certificate';
 import RecentProjects from './RecentProjects';
 import Skills from './Skills';
 
@@ -55,6 +56,10 @@ const Home = () => {
             <View style={styles.recentProjectContainer}>
                 <Text style={[styles.introText, {textTransform:'uppercase'}]}>Recent Projects</Text>
                 <RecentProjects />
+            </View>
+            <View style={styles.certificateContainer}>
+                <Text style={[styles.introText, {marginLeft: 10, textTransform:'uppercase'}]}>Certificates</Text>
+                <Certificate />
             </View>
             </View>
         </ScrollView>
@@ -140,6 +145,9 @@ const styles = StyleSheet.create({
     skillsContainer:{
         marginTop: 20,
         padding: 10
+    },
+    certificateContainer:{
+        marginTop: 20,
     }
 });
 

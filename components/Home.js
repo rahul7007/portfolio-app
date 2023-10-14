@@ -1,8 +1,8 @@
 import React from 'react';
 import { Dimensions, Image, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native'
 import { FONTS, icons, images } from '../constants'
-import Certificate from './Certificate';
 import RecentProjects from './RecentProjects';
+import RecentProjectsOld from './RecentProjectsOld';
 import Skills from './Skills';
 
 const Home = () => {
@@ -59,7 +59,7 @@ const Home = () => {
             </View>
             <View style={styles.certificateContainer}>
                 <Text style={[styles.introText, {marginLeft: 10, textTransform:'uppercase'}]}>Certificates</Text>
-                <Certificate />
+                {/* <Certificate /> */}
             </View>
             </View>
         </ScrollView>

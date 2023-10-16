@@ -54,9 +54,30 @@ export const FONTS = {
     body3: { fontFamily: "Roboto-Regular", fontSize: SIZES.body3, lineHeight: 22 },
     body4: { fontFamily: "Roboto-Regular", fontSize: SIZES.body4, lineHeight: 22 },
     body5: { fontFamily: "Roboto-Regular", fontSize: SIZES.body5, lineHeight: 22 },
-    primary: "PrimaryFont"
+    primary: "FuzzyBubbles-Bold"
 };
 
-const appTheme = { COLORS, SIZES, FONTS };
+export const SHADOW = {
+    light:{
+        shadowColor: '#000',
+        shadowRadius: 4,
+        shadowOpacity: 0.1,
+        shadowOffset: {
+            width: 0, 
+            height: 2
+        }
+    },
+    dark:{
+        shadowColor: '#000',
+        shadowRadius: 4,
+        shadowOpacity: 0.3,
+        shadowOffset: {
+            width: 0, 
+            height: 2
+        }
+    }
+}
+
+const appTheme = { COLORS, SIZES, FONTS, SHADOW };
 
 export default appTheme;

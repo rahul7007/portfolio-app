@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         flexWrap:'wrap',
     },
     skillBox:{
-        backgroundColor:'#0B486B',
+        backgroundColor:'#AACEDE',
         marginHorizontal: 5,
         marginVertical: 5,
         paddingVertical: 5,
@@ -35,7 +35,8 @@ const styles = StyleSheet.create({
     },
     skillText:{
         fontFamily:'FuzzyBubbles-Bold',
-        fontSize: 17
+        fontSize: 17,
+        color: '#1A3369'
     }
 });
 

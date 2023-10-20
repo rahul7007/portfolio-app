@@ -55,7 +55,10 @@ const Home = () => {
                 <Skills />
             </View> 
             <View style={styles.recentProjectContainer}>
-                <Text style={[styles.introText, {textTransform:'uppercase'}]}>Recent Projects</Text>
+                <View style={{justifyContent:'space-between', flexDirection:'row'}}>
+                    <Text style={[styles.introText, {textTransform:'uppercase'}]}>Recent Projects</Text>
+                    <Text style={[styles.introText]}>See all</Text>
+                </View>
                 <RecentProjects />
             </View>
             <View style={styles.certificateContainer}>
@@ -72,17 +75,10 @@ const styles = StyleSheet.create({
         flex: 1,
         borderWidth:0,
         margin:10,
-        padding: 0,
-        // backgroundColor:"#a1e6b3",
-        // height:300,
-        borderTopStartRadius : 100,
-        borderBottomEndRadius : 20,
-        borderTopRightRadius: 40,
-        borderBottomLeftRadius: 20,
-        // overflow : 'hidden'
     },
     upperBox:{
-        borderWidth:2,
+        borderWidth:6,
+        borderColor:'#ACCBE8',
         padding: 5,
         borderTopStartRadius : 100,
         borderBottomEndRadius : 20,
@@ -108,7 +104,7 @@ const styles = StyleSheet.create({
         borderRadius: Math.round(Dimensions.get('window').width + Dimensions.get('window').height) / 2,
         borderWidth: 15,
         padding: 10,
-        borderColor:'#0B486B',
+        borderColor:'#AACEDE',
         // width:225
     },
     imageBackgroundChildCircle:{
@@ -117,7 +113,7 @@ const styles = StyleSheet.create({
         // borderWidth: 10,
         paddingTop: 5,
         paddingHorizontal: 5,
-        backgroundColor:'#0B486B',
+        backgroundColor:'#AACEDE',
         overflow: 'hidden'
     },
     imageStyle:{
@@ -130,8 +126,8 @@ const styles = StyleSheet.create({
         marginTop: -50
     },
     introText:{
-        color: '#2D220E',
-        fontSize: 28,
+        color: '#1A3369',  //#6588DA
+        fontSize: 18,
         marginTop: 5,
         fontFamily:'FuzzyBubbles-Bold'
     },
@@ -141,7 +137,8 @@ const styles = StyleSheet.create({
     },
     recentProjectContainer:{
         marginTop: 20,
-        paddingLeft: 10
+        paddingLeft: 10,
+        paddingBottom: 10
     },
     skillsContainer:{
         marginTop: 20,

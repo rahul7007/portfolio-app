@@ -35,21 +35,21 @@ function App(){
     ...DefaultTheme,
     colors: {
       ...DefaultTheme.colors,
-      background: '#E3A342'
+      // background: '#E3A342'
     },
   };
 
   return (
     <NavigationContainer theme={MyTheme}>
-    <StatusBar backgroundColor='#0B486B' />
+    <StatusBar backgroundColor='#AACEDE' />
     <Drawer.Navigator
       screenOptions={{
         drawerStyle:{
-          backgroundColor:'#E3A342',
+          backgroundColor:'#e9b05a',
           width: Dimensions.get('window').width/1.2
         },
         headerStyle:{
-          backgroundColor:'#0B486B'
+          backgroundColor:'#AACEDE'
         },
         headerTintColor:'red',
         headerTitleStyle: {

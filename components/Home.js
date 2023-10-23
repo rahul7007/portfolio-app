@@ -30,7 +30,7 @@ const Home = () => {
                 </View>
             </View>
 
-                <View style={{flex: 1, flexDirection: 'row', justifyContent:"space-between", marginTop: 28, paddingHorizontal: 50}}>
+                {/* <View style={{flex: 1, flexDirection: 'row', justifyContent:"space-between", marginTop: 28, paddingHorizontal: 50}}>
                 <View style={{height: 50, width:50, backgroundColor:'', marginRight:20}}>
                 <Image 
                     source={icons.whatsapp}
@@ -49,7 +49,7 @@ const Home = () => {
                         style={styles.contactIcon}
                     />  
                 </View>
-            </View>
+            </View> */}
             <View style={styles.skillsContainer}>
                 <Text style={[styles.introText, {textTransform:'uppercase'}]}>Skills</Text>
                 <Skills />
@@ -62,7 +62,10 @@ const Home = () => {
                 <RecentProjects />
             </View>
             <View style={styles.certificateContainer}>
-                <Text style={[styles.introText, {marginLeft: 10, textTransform:'uppercase'}]}>Certificates</Text>
+                <View style={{justifyContent:'space-between', flexDirection:'row'}}>
+                    <Text style={[styles.introText, {marginLeft: 10, textTransform:'uppercase'}]}>Certificates</Text>
+                    <Text style={[styles.introText]}>See all</Text>
+                </View>
                 <Certificate />
             </View>
             </View>

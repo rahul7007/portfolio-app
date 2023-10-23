@@ -1,13 +1,13 @@
 export const certificateData = [
     {
       id: 1,
-      uri: 'https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+      uri: 'https://user-images.githubusercontent.com/30997178/158071495-6929e045-2e4f-4219-949d-c34bdce92092.png',
       name: 'certificate-1',
       desc: 'certificate details'
     },
     {
       id: 2,
-      uri: 'https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGRvZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60',
+      uri: 'https://miro.medium.com/v2/resize:fit:1128/1*EWttqrihTanNGjRlorbpZg.png',
       name: 'certificate-1',
       desc: 'certificate details'
     },

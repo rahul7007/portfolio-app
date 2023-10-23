@@ -51,7 +51,7 @@ function App(){
         headerStyle:{
           backgroundColor:'#AACEDE'
         },
-        headerTintColor:'red',
+        headerTintColor:'#3D405B',
         headerTitleStyle: {
           fontWeight: 'bold'
         },

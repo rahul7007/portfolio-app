@@ -133,6 +133,9 @@ function App(){
             fontSize: 15,
             fontFamily: FONTS.primary
           },
+          headerTitleStyle: {
+            fontFamily: FONTS.primary
+          },
           drawerIcon: () => (
             <Image source={home} style={{height: 30, width: 30}} />
           )
@@ -146,6 +149,9 @@ function App(){
           title: 'Projects',
           drawerLabelStyle:{
             fontSize: 15,
+            fontFamily: FONTS.primary
+          },
+          headerTitleStyle: {
             fontFamily: FONTS.primary
           },
           drawerIcon: () => (
@@ -163,6 +169,9 @@ function App(){
             fontSize: 15,
             fontFamily: FONTS.primary
           },
+          headerTitleStyle: {
+            fontFamily: FONTS.primary
+          },
           drawerIcon: () => (
             <Image source={certificate} style={{height: 35, width: 30}} />
           )
@@ -178,6 +187,9 @@ function App(){
             fontSize: 15,
             fontFamily: FONTS.primary
           },
+          headerTitleStyle: {
+            fontFamily: FONTS.primary
+          },
           drawerIcon: () => (
             <Image source={about} style={{height: 30, width: 30}} />
           )
@@ -191,6 +203,9 @@ function App(){
           title: 'Experience',
           drawerLabelStyle:{
             fontSize: 15,
+            fontFamily: FONTS.primary
+          },
+          headerTitleStyle: {
             fontFamily: FONTS.primary
           },
           drawerIcon: () => (

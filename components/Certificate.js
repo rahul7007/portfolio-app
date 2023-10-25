@@ -23,7 +23,7 @@ const Certificate = () => {
         <View style={styles.container}>
             {
                 certificateData.map((item)=> (
-                    item.id <= 4 ?  
+                    item.id <= 4 &&  
                     <View key={item.id} style={styles.cardContainer}>
                         <View style={[styles.card]}>
                             <View style={styles.imageBox}>
@@ -40,11 +40,7 @@ const Certificate = () => {
                                 </View>
                             </View>
                         </View>
-                    </View> : 
-                    item.id === 5 ? 
-                    <View key={item.id} style={{marginLeft: windowWidth-80}}>
-                        <Text style={styles.viewAllCertificate}>See All</Text>
-                    </View> : null
+                    </View>
                 ))
             }
         </View>

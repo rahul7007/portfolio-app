@@ -1,15 +1,19 @@
 import React from 'react';
+import { TouchableOpacity } from 'react-native';
 import { Dimensions, Image, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native'
 import { FONTS, icons, images } from '../constants'
 import Certificate from './Certificate';
+import Footer from './Footer';
 import RecentProjects from './RecentProjects';
 import RecentProjectsOld from './RecentProjectsOld';
 import Skills from './Skills';
 
-const Home = () => {
+const Home = ({ navigation }) => {
     return(
+        <View style={{flex: 1}}>
         <ScrollView showsVerticalScrollIndicator={false}>
             <View style={styles.container}>
+                <View style={{flex: 1}}>
             <View style={styles.upperBox}>
                 <Text style={[styles.portfolioText, styles.introText]}>Portfolio</Text>
                 <View style={styles.imageContainer}>
@@ -69,7 +73,10 @@ const Home = () => {
                 <Certificate />
             </View>
             </View>
+            </View>
         </ScrollView>
+        <Footer />
+        </View>
     )
 }
 

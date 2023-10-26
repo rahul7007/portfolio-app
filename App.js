@@ -41,15 +41,15 @@ function App(){
 
   return (
     <NavigationContainer theme={MyTheme}>
-    <StatusBar backgroundColor='#ACCBE8' />
+    <StatusBar backgroundColor='#0084B4' />
     <Drawer.Navigator
       screenOptions={{
         drawerStyle:{
-          backgroundColor:'#e9b05a',
+          backgroundColor: '#AACEDE', //'#C6DFED', //'#e9b05a',
           width: Dimensions.get('window').width/1.2
         },
         headerStyle:{
-          backgroundColor:'#ACCBE8',
+          backgroundColor:'#0084B4' //'#ACCBE8',
         },
         headerTintColor:'#3D405B',
         headerTitleStyle: {

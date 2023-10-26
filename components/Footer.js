@@ -36,7 +36,7 @@ const Footer = () => {
 const styles = StyleSheet.create({
     footer:{
         height: 60,
-        backgroundColor:'#ACCBE8',
+        backgroundColor:'#0084B4',
         borderTopLeftRadius: 80,
         borderTopRightRadius: 80,
         borderBottomLeftRadius: 20,

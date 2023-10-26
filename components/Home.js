@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     },
     upperBox:{
         borderWidth:6,
-        borderColor:'#ACCBE8',
+        borderColor:'#0084B4',         //'#7977CF',
         padding: 5,
         borderTopStartRadius : 100,
         borderBottomEndRadius : 20,
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
         borderRadius: Math.round(Dimensions.get('window').width + Dimensions.get('window').height) / 2,
         borderWidth: 15,
         padding: 10,
-        borderColor:'#AACEDE',
+        borderColor:'#0084B4',
         // width:225
     },
     imageBackgroundChildCircle:{
